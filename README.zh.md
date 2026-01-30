@@ -24,11 +24,15 @@ cp .env.example .env
 - 在 Agent 提示词前加上类似说明：
 
   ```text
+  # 启动
   - 运行 `./scripts/launch.sh`
   - 使用 .env 中 `PORT` 对应的 agent-browser 连接
 
   # 你的操作
   ...
+
+  # 关闭
+  - 运行 agent-browser close
   ```
 
 ## 示例提示词
@@ -36,9 +40,15 @@ cp .env.example .env
 在 Agent 工具中可以使用：
 
 ```text
+# 启动
 - 运行 `./scripts/launch.sh`
 - 使用 .env 中 `PORT` 对应的 agent-browser 连接
-使用 agent-browser 访问 https://github.com/yuler/explore-agent-browser，截取整页截图，并保存到 `outputs/` 目录。
+
+# 你的操作
+- 使用 agent-browser 访问 https://github.com/yuler/explore-agent-browser，截取整页截图，并保存到 `outputs/` 目录。
+
+# 关闭
+- 运行 agent-browser close
 ```
 
 ## TODO:
