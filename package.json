@@ -1,0 +1,22 @@
+{
+  "name": "explore-agent-browser",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Explore Agent Browser",
+  "packageManager": "pnpm@10.28.1+sha512.7d7dbbca9e99447b7c3bf7a73286afaaf6be99251eb9498baefa7d406892f67b879adb3a1d7e687fc4ccc1a388c7175fbaae567a26ab44d1067b54fcb0d6a316",
+  "main": "index.ts",
+  "author": "yuler<is.yuler@gmail.com>",
+  "keywords": [
+    "explore",
+    "agent",
+    "browser"
+  ],
+  "scripts": {
+    "launch": "./scripts/kill.sh && ./scripts/launch.sh",
+    "kill": "./scripts/kill.sh",
+    "profiles:size": "du -sh ./profiles/*"
+  },
+  "devDependencies": {
+    "agent-browser": "^0.8.5"
+  }
+}
