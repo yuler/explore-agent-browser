@@ -1,6 +1,8 @@
-# explore-agent-browser
+<p align="center">
+  <a>English</a> | <a href="README.zh.md">中文</a>
+</p>
 
-[中文](README.zh.md)
+# explore-agent-browser
 
 Explore [agent-browser](https://github.com/vercel-labs/agent-browser) in AI.
 
