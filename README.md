@@ -20,7 +20,7 @@ cp .env.example .env
 ## How it works
 
 - **`npm run launch`** starts Chrome with a persistent profile in the current folder, so cookies and storage are preserved.
-- Log in to sites that require authorization; sessions persist across runs.
+- login to sites that require authorization; sessions persist across runs.
 - Prefix your Agent prompt with instructions like:
 
   ```text
@@ -51,6 +51,8 @@ In the Agent tool, you can use:
 - Run agent-browser close
 ```
 
-## TODO:
+## Skills
 
-- Add `skills` folder
+- `npx skills add .` to add the current skill: [demo-gmail-unread](./skills/demo-gmail-unread/)
+- `npm run launch` and login to your Google Gmail account first
+- `/demo-emai-unread` run this skill

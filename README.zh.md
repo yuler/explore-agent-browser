@@ -51,6 +51,8 @@ cp .env.example .env
 - 运行 agent-browser close
 ```
 
-## TODO:
+## Skills
 
-- 添加 `skills` 文件夹
+- `npx skills add .` 添加当前技能：[demo-gmail-unread](./skills/demo-gmail-unread/)
+- `npm run launch` 并先登录你的 Google Gmail 账号
+- `/demo-emai-unread` 运行该技能

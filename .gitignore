@@ -25,3 +25,5 @@ outputs/*
 
 # Misc
 .cursor/skills/*
+skills/*
+!skills/demo-gmail-unread/
