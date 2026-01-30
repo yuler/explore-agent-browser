@@ -4,7 +4,7 @@
 
 # explore-agent-browser
 
-来探索 AI 中使用 [agent-browser](https://github.com/vercel-labs/agent-browser)
+在 AI 中探索 [agent-browser](https://github.com/vercel-labs/agent-browser)
 
 ## 环境准备
 
@@ -17,10 +17,30 @@ npx skills add vercel-labs/agent-browser
 cp .env.example .env
 ```
 
-## 提示词
+## 工作原理
 
-在 Agent 工具中输入以下提示词：
+- **`npm run launch`** 会在当前目录下以持久化配置启动 Chrome，因此 cookies 和存储会被保留。
+- 在需要登录的网站上完成登录后，会话会在多次运行之间保持。
+- 在 Agent 提示词前加上类似说明：
+
+  ```text
+  - 运行 `./scripts/launch.sh`
+  - 使用 .env 中 `PORT` 对应的 agent-browser 连接
+
+  # 你的操作
+  ...
+  ```
+
+## 示例提示词
+
+在 Agent 工具中可以使用：
 
 ```text
-使用 agent-browser 访问 https://github.com/yuler/explore-agent-browser，截取整页截图，并将内容保存到 `outputs/` 目录。
+- 运行 `./scripts/launch.sh`
+- 使用 .env 中 `PORT` 对应的 agent-browser 连接
+使用 agent-browser 访问 https://github.com/yuler/explore-agent-browser，截取整页截图，并保存到 `outputs/` 目录。
 ```
+
+## TODO:
+
+- 添加 `skills` 文件夹
