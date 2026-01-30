@@ -1,20 +1,24 @@
 # explore-agent-browser
 
-A repo explore [agent-browser](https://github.com/vercel-labs/agent-browser) througth AI
+[中文](README.zh.md)
 
-## Quick start
+Explore [agent-browser](https://github.com/vercel-labs/agent-browser) in AI.
+
+## Setup
 
 ```bash
 # install agent-browser
 pnpm install
 # install skill
 npx skills add vercel-labs/agent-browser
-# copy .env.example to .env & change the value
+# copy .env.example to .env and modify the values as needed
 cp .env.example .env
 ```
 
-在 Agent 工具中输入以下提示
+## Prompt
+
+Enter the following prompt in the Agent tool:
 
 ```text
-使用 agent-browser 访问 https://github.com/yuler/expore-agent-browser, 并将整个页面截图将内容保存到 `outpus/` 目录
+Use agent-browser to visit https://github.com/yuler/explore-agent-browser, capture a screenshot of the entire page, and save the content to the `outputs/` directory.
 ```
